@@ -13,22 +13,51 @@ export default function Recipe({ recipeData }) {
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{recipeData.title}</h1>
+
         <div className={utilStyles.lightText}>
           <Date dateString={recipeData.date} />
         </div>
+
         <div className={utilStyles.lightText}>
-          <p>{recipeData.servings} servings &#183; {recipeData.minutes} minutes</p>
+          {recipeData?.servings && recipeData?.minutes && (
+            <p>{recipeData.servings} servings &#183; {recipeData.minutes} minutes</p>
+          )}
         </div>
-        <Image
-          priority
-          src={"/images/recipes/" + recipeData.id + ".png"}
-          height={320}
-          width={420}
-          alt={"Photo of " + recipeData.title}
-        />
-        <div dangerouslySetInnerHTML={{ __html: recipeData.contentHtml }} />
+
+        {recipeData?.id && (
+          <Image
+            priority
+            src={"/images/recipes/" + recipeData.id + ".png"}
+            height={320}
+            width={420}
+            alt={"Photo of " + recipeData.title}
+          />
+        )}
+
+        {recipeData.contentHtml && (
+          <div dangerouslySetInnerHTML={{ __html: recipeData.contentHtml }} />
+        )}
+
+        <div style={{ display: 'flex', gap: '20px' }}>
+          <div style={{ flex: '1' }}>
+            {recipeData.ingredients && (
+              <>
+                <h2>Ingredients</h2>
+                <ul dangerouslySetInnerHTML={{ __html: recipeData.ingredients }} />
+              </>
+            )}
+          </div>
+          <div style={{ flex: '1' }}>
+            {recipeData.directions && (
+              <>
+                <h2>Directions</h2>
+                <ol dangerouslySetInnerHTML={{ __html: recipeData.directions }} />
+              </>
+            )}
+          </div>
+        </div>
       </article>
-    </Layout >
+    </Layout>
   );
 }
 
