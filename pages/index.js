@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedRecipesData } from '../lib/recipes';
 import Link from 'next/link';
@@ -29,18 +29,9 @@ export default function Home({ recipes }) {
       <section>
         <h2>Recipes</h2>
         <ul className={utilStyles.list}>
-          {/* {JSON.parse(recipes).map((recipe) => (
-            <li className={utilStyles.listItem} key={recipe.id}>
-              {recipe.title}
-              <br />
-              {recipe.id}
-              <br />
-              {recipe.date}
-            </li>
-          ))} */}
           {recipes.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+              <Link href={`/recipes/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />

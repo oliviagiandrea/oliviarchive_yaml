@@ -1,19 +1,25 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
-date: '2020-01-02'
+title: 'Mung Bean Cookies'
+date: '2024-02-04'
+servings: 24
+minutes: 60
+categories: ['desserts', 'cookies']
+ingredients: ['butter', 'powdered sugar', 'salt', 'all-purpose flour', 'cornflour', 'tapioca flour', 'baking powder', 'egg yolk', 'egg']
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+**Ingredients**: 
+- 1 cup (2 sticks) unsalted butter, softened
+- 1/2 cup powdered sugar
+- 1/2 tsp salt
+- 1 1/2 cups all-purpose flour
+- 2 tbsp cornflour
+- 3/4 cup tapioca flour
+- 1/2 tsp baking powder
+- 1 egg yolk, lightly beaten
 
-You can use Static Generation for many types of pages, including:
-
-- Marketing pages
-- Blog recipes
-- E-commerce product listings
-- Help and documentation
-
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
-
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
-
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+**Directions**: 
+1. Preheat oven to 300F. 
+2. In an electric mixer, cream together butter, powdered sugar, and salt until light and fluffy. 
+3. Sift in all three flours and baking powder. Mix again until fully combined. 
+4. Drop by tsp scoop onto greased baking sheets. Brush each cookie with the egg yolk to glaze them, then bake for 20 minutes or until the cookies are lightly golden-brown on the bottoms. 
+5. Let cool on the baking sheet for 5 minutes, then finish cooling entirely on wire racks before serving. 

@@ -1,11 +1,25 @@
 ---
-title: 'Two Forms of Pre-rendering'
-date: '2020-01-01'
+title: 'Mung Bean Cookies'
+date: '2024-02-04'
+servings: 24
+minutes: 60
+categories: ['desserts', 'cookies']
+ingredients: ['butter', 'powdered sugar', 'salt', 'all-purpose flour', 'cornflour', 'tapioca flour', 'baking powder', 'egg yolk', 'egg']
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+**Ingredients**: 
+- 1 cup (2 sticks) unsalted butter, softened
+- 1/2 cup powdered sugar
+- 1/2 tsp salt
+- 1 1/2 cups all-purpose flour
+- 2 tbsp cornflour
+- 3/4 cup tapioca flour
+- 1/2 tsp baking powder
+- 1 egg yolk, lightly beaten
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
-
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+**Directions**: 
+1. Preheat oven to 300F. 
+2. In an electric mixer, cream together butter, powdered sugar, and salt until light and fluffy. 
+3. Sift in all three flours and baking powder. Mix again until fully combined. 
+4. Drop by tsp scoop onto greased baking sheets. Brush each cookie with the egg yolk to glaze them, then bake for 20 minutes or until the cookies are lightly golden-brown on the bottoms. 
+5. Let cool on the baking sheet for 5 minutes, then finish cooling entirely on wire racks before serving. 
