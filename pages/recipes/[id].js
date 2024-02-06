@@ -19,9 +19,7 @@ export default function Recipe({ recipeData }) {
         </div>
 
         <div className={utilStyles.lightText}>
-          {recipeData?.servings && recipeData?.minutes && (
-            <p>{recipeData.servings} servings &#183; {recipeData.minutes} minutes</p>
-          )}
+          <p>{recipeData.servings} servings &#183; {recipeData.minutes} minutes</p>
         </div>
 
         {recipeData?.id && (
@@ -32,10 +30,6 @@ export default function Recipe({ recipeData }) {
             width={420}
             alt={"Photo of " + recipeData.title}
           />
-        )}
-
-        {recipeData.contentHtml && (
-          <div dangerouslySetInnerHTML={{ __html: recipeData.contentHtml }} />
         )}
 
         <div style={{ display: 'flex', gap: '20px' }}>
