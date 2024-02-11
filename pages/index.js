@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Layout from '../components/layout';
-import styles from '../styles/home.module.css';
-import utilStyles from '../styles/utils.module.css';
+import styles from '../styles/Home.module.css';
 import { getSortedRecipesData } from '../lib/recipes';
 import Link from 'next/link';
 import Date from '../components/date';
@@ -65,7 +64,7 @@ export default function Home({ recipes }) {
         </div>
       </section>
       <section>
-        
+
       </section>
       {/* <section>
         <h2>Recipes</h2>
