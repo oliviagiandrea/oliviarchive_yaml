@@ -1,27 +1,61 @@
+:root {
+  --light-green: #606C38;
+  --dark-green: #283618;
+  --white: #FEFAE0;
+  --light-orange: #DDA15E;
+  --light-orange: #BC6C25;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../Fonts/Signika-VariableFont_GRAD,wght.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'Courier New';
+  src: url('../Fonts/cour.ttf')  format('truetype')
+}
+
 html,
 body {
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
+  margin: 0 0 0 2.4em;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1em;
+  font-weight: 400;
+  max-width: calc(100vw - 3em);
+  background-color: var(--white);
+  overflow-x: hidden;
 }
 
-* {
-  box-sizing: border-box;
+h1 {
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
 }
 
-a {
-  color: #0070f3;
-  text-decoration: none;
+h2 {
+  font-family: 'Signika', sans-serif;
+  font-size: 2em;
+  font-weight: 200;
 }
 
-a:hover {
-  text-decoration: underline;
+h3 {
+  font-family: 'Signika', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.container {
+  width: calc(100vw - 5em);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

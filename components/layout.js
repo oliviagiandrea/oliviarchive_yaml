@@ -3,8 +3,7 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-
-const name = 'Olivia Giandrea';
+import pancake from '../public/images/pancake.jpg';
 
 export default function Layout({ children, home }) {
   return (
@@ -17,18 +16,17 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content="OLIVIARCHIVE" />
       </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/gallery.png"
-              height={320}
-              width={420}
-              alt="Oliviarchive photo gallery"
-            />
-            <h1>OLIVIARCHIVE</h1>
-          </>
+      <header>
+        {/* {home ? (
+          <div className={styles.container}>
+            <div className={styles.navBar}></div>
+            <div className={styles.imageContainer}>
+              <img src="/images/pancake.jpg" alt="Pancake" className={styles.headerImage} />
+            </div>
+            <div className={styles.textContainer}>
+              <h1 className={styles.title}>BING BONG</h1>
+            </div>
+          </div>
         ) : (
           <>
             <Link href="/">
@@ -46,7 +44,7 @@ export default function Layout({ children, home }) {
               </Link>
             </h2>
           </>
-        )}
+        )} */}
       </header>
       <main>{children}</main>
       {!home && (

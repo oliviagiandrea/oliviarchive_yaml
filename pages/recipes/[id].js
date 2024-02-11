@@ -22,15 +22,13 @@ export default function Recipe({ recipeData }) {
           <p>{recipeData.servings} servings &#183; {recipeData.minutes} minutes</p>
         </div>
 
-        {recipeData?.id && (
-          <Image
-            priority
-            src={"/images/recipes/" + recipeData.id + ".png"}
-            height={320}
-            width={420}
-            alt={"Photo of " + recipeData.title}
-          />
-        )}
+        {/* <Image
+          priority
+          src={"/images/recipes/" + recipeData.id + ".png"}
+          height={320}
+          width={420}
+          alt={"Photo of " + recipeData.title}
+        /> */}
 
         <div style={{ display: 'flex', gap: '20px' }}>
           <div style={{ flex: '1' }}>
