@@ -160,7 +160,7 @@
 }
 
 .blurb {
-  width: 60vw;
+  width: 50vw;
   margin-bottom: 3em;
 }
 
@@ -171,6 +171,28 @@
 
 .horizontalLine {
   height: 3px;
-  width: 60vw;
+  width: 50vw;
   border-bottom: 1px solid var(--light-green); 
+}
+
+/* ================================ triple cards ================================= */
+
+.card {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 20vh;
+}
+
+.cardImage {
+  height: 50vh;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }

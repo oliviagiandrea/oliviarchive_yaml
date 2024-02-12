@@ -6,8 +6,8 @@ import { getSortedRecipesData } from '../lib/recipes';
 import Link from 'next/link';
 import Date from '../components/date';
 
-export async function getStaticProps() {
-  const recipes = await getSortedRecipesData();
+export function getStaticProps() {
+  const recipes = getSortedRecipesData();
   return {
     props: {
       recipes,
@@ -64,7 +64,29 @@ export default function Home({ recipes }) {
         </div>
       </section>
       <section>
-
+        <div className="container">
+          <div className={styles.card}>
+            <img src="/images/recipes/apple-pie.png" alt="Explore Recipes" className={styles.cardImage} />
+            <div className={styles.cardBody}>
+              <h2>Explore Recipes</h2>
+              <p>I'm an example paragraph. I will describe the category header above.</p>
+            </div>
+          </div>
+          <div className={styles.card}>
+            <div className={`${styles.cardBody} right`}>
+              <h2>Search Ingredients</h2>
+              <p>I'm an example paragraph. I will describe the category header above.</p>
+            </div>
+            <img src="/images/recipes/mung-bean-cookies.png" alt="Search Ingredients" className={styles.cardImage} />
+          </div>
+          <div className={styles.card}>
+            <img src="/images/recipes/buttermilk-pancakes.png" alt="Browse Articles" className={styles.cardImage} />
+            <div className={styles.cardBody}>
+              <h2>Browse Articles</h2>
+              <p>I'm an example paragraph. I will describe the category header above.</p>
+            </div>
+          </div>
+        </div>
       </section>
       {/* <section>
         <h2>Recipes</h2>

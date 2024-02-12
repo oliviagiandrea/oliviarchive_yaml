@@ -21,7 +21,8 @@ body {
   padding: 0;
   margin: 0 0 0 2.4em;
   font-family: 'Courier New', monospace;
-  font-size: 1.1em;
+  font-size: 1em;
+  letter-spacing: 1px;
   font-weight: 400;
   max-width: calc(100vw - 3em);
   background-color: var(--white);
@@ -58,4 +59,8 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.right {
+  text-align: right !important;
 }
