@@ -1,5 +1,5 @@
 ---
-title: "Mama's No Bakes"
+title: "No Bake Cookies"
 date: "2024-02-04"
 servings: 24
 minutes: 200

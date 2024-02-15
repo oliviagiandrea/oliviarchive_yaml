@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Head from 'next/head';
 import Layout from '../components/layout';
 import styles from '../styles/Home.module.css';
@@ -16,11 +15,6 @@ export function getStaticProps() {
 }
 
 export default function Home({ recipes }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <Layout home>
       <Head>
@@ -28,20 +22,7 @@ export default function Home({ recipes }) {
       </Head>
       <section>
         <div className={styles.titleContainer}>
-          <nav className={styles.navbar}>
-            <ul className={styles.navLinks}>
-              <Link href="/">
-                <img src="/images/logo_tiny.png" alt="Oliviarchive logo" className={styles.logo} />
-              </Link>
-              <input type="checkbox" id="checkbox_toggle" checked={isMenuOpen} onChange={toggleMenu} />
-              <label htmlFor="checkbox_toggle" className={styles.hamburger}>&#9776;</label>
-              <div className={`${styles.menu} ${isMenuOpen ? styles.showMenu : ''}`}>
-                <li><Link href="/recipes">Recipes</Link></li>
-                <li><Link href="/ingredients">Ingredients</Link></li>
-                <li><Link href="/articles">Articles</Link></li>
-              </div>
-            </ul>
-          </nav>
+          
           <div className={styles.imageContainer}>
             <img src="/images/pancake.jpg" alt="Pancake" className={styles.headerImage} />
           </div>

@@ -1,5 +1,5 @@
 ---
-title: "Mama's Lasagna"
+title: "Lasagna"
 date: "2024-02-04"
 servings: 15
 minutes: 120

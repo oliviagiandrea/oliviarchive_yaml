@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Date from '../../components/date';
 import Layout from '../../components/layout';
 import { getAllRecipeIds, getRecipeData } from '../../lib/recipes';
-import utilStyles from '../../styles/utils.module.css';
 
 export default function Recipe({ recipeData }) {
   return (
@@ -11,18 +10,15 @@ export default function Recipe({ recipeData }) {
       <Head>
         <title>{recipeData.title}</title>
       </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{recipeData.title}</h1>
+      <section>
+        <div className="container">
+          <h1>{recipeData.title}</h1>
 
-        <div className={utilStyles.lightText}>
           <Date dateString={recipeData.date} />
-        </div>
 
-        <div className={utilStyles.lightText}>
           <p>{recipeData.servings} servings &#183; {recipeData.minutes} minutes</p>
-        </div>
 
-        {/* <Image
+          {/* <Image
           priority
           src={"/images/recipes/" + recipeData.id + ".png"}
           height={320}
@@ -30,25 +26,26 @@ export default function Recipe({ recipeData }) {
           alt={"Photo of " + recipeData.title}
         /> */}
 
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <div style={{ flex: '1' }}>
-            {recipeData.ingredients && (
-              <>
-                <h2>Ingredients</h2>
-                <ul dangerouslySetInnerHTML={{ __html: recipeData.ingredients }} />
-              </>
-            )}
-          </div>
-          <div style={{ flex: '1' }}>
-            {recipeData.directions && (
-              <>
-                <h2>Directions</h2>
-                <ol dangerouslySetInnerHTML={{ __html: recipeData.directions }} />
-              </>
-            )}
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <div style={{ flex: '1' }}>
+              {recipeData.ingredients && (
+                <>
+                  <h2>Ingredients</h2>
+                  <ul dangerouslySetInnerHTML={{ __html: recipeData.ingredients }} />
+                </>
+              )}
+            </div>
+            <div style={{ flex: '1' }}>
+              {recipeData.directions && (
+                <>
+                  <h2>Directions</h2>
+                  <ol dangerouslySetInnerHTML={{ __html: recipeData.directions }} />
+                </>
+              )}
+            </div>
           </div>
         </div>
-      </article>
+      </section>
     </Layout>
   );
 }

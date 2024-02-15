@@ -1,5 +1,5 @@
 ---
-title: "Mama's Chocolate Chip Cookies"
+title: "Thin Chocolate Chip Cookies"
 date: "2024-02-04"
 servings: 24
 minutes: 60

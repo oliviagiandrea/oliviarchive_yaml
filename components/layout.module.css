@@ -1,0 +1,163 @@
+/* =============================== navbar =========================== */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: calc(100vh - 2em);
+  padding: 1em;
+  background-color: var(--dark-green);
+  color: var(--white);
+  width: 3rem;
+  z-index: 50;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navLinks a {
+  color: var(--white);
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline-start: 0;
+} 
+
+.menu {
+  display: flex;
+  position: fixed;
+  gap: 1em;
+  font-size: 1em;
+  background-color: var(--dark-green);
+  left: -40vw; 
+  top: 0;
+  text-align: center;
+  padding: 1em 4em;
+  z-index: 50;
+  height: calc(100vh - 2em);
+  width: 20vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  transition: left 0.3s ease, opacity 0.3s ease; 
+}
+
+.showMenu {
+  left: 0; 
+  opacity: 1; 
+}
+
+.menu li:hover {
+  text-decoration: underline;
+  transition: 1s ease;
+  display: inline-block;
+}
+
+.menu li {
+  padding: 0.5em 1em;
+}
+
+.menu li + li {
+  margin-top: 0.5em;
+}
+
+.navLinks input[type=checkbox] {
+  display: none;
+  margin: 0;
+  padding: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+#checkbox_toggle:checked ~ #menu {
+  display: block;
+}
+
+.logo {
+  max-width: 3em;
+  position: absolute;
+  z-index: 1000;
+  left: 0.7em;
+  top: 1em;
+}
+
+.hamburger {
+  font-size: 2.5em;
+  user-select: none;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+/* ================================ footer ================================= */
+
+.footerContainer {
+  height: 50vh;
+  background-color: var(--dark-green);
+}
+
+.footerContent {
+  width: 50vw;
+  height: 80%;
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.emailFormContainer {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 4em;
+  border-right: 1px solid var(--light-orange);
+}
+
+.emailFormContainer h2 {
+  margin-block-start: 0;
+}
+
+#emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.footerContactContainer {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4em;
+  font-size: 0.8em;
+}
+
+.footerContactContainer p:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.footerContact {
+  border-bottom: 1px solid var(--light-orange);
+}
+
+.footerCopyright {
+  padding-top: 2em;
+}

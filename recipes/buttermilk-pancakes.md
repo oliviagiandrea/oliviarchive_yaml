@@ -1,5 +1,5 @@
 ---
-title: "Daddy's Buttermilk Pancakes"
+title: "Buttermilk Pancakes"
 date: '2024-02-04'
 servings: 3
 minutes: 30
