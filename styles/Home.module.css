@@ -66,7 +66,7 @@
 .horizontalLine {
   height: 3px;
   width: 50vw;
-  border-bottom: 1px solid var(--light-green); 
+  border-bottom: 1px solid var(--green); 
 }
 
 /* ================================ triple cards ================================= */

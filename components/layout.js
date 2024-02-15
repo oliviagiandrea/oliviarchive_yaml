@@ -77,9 +77,9 @@ export default function Layout({ children, home }) {
             <div className={styles.emailFormContainer}>
               <h2>Join Our Mailing List</h2>
               <form id={styles.emailForm}>
-                <label for="email">Enter your email:</label>
+                <label htmlFor="email">Enter your email:</label>
                 <input type="email" id="email" name="email" />
-                <button type="submit">Subscribe Now</button>
+                <a href="/subscribe">Subscribe</a>
               </form>
             </div>
             <div className={styles.footerContactContainer}>

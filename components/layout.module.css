@@ -9,7 +9,7 @@
   top: 0;
   height: calc(100vh - 2em);
   padding: 1em;
-  background-color: var(--dark-green);
+  background-color: var(--green);
   color: var(--white);
   width: 3rem;
   z-index: 50;
@@ -39,7 +39,7 @@
   position: fixed;
   gap: 1em;
   font-size: 1em;
-  background-color: var(--dark-green);
+  background-color: var(--green);
   left: -40vw; 
   top: 0;
   text-align: center;
@@ -108,7 +108,7 @@
 
 .footerContainer {
   height: 50vh;
-  background-color: var(--dark-green);
+  background-color: var(--green);
 }
 
 .footerContent {
@@ -118,6 +118,7 @@
   display: flex;
   flex-direction: row;
   text-align: left;
+  gap: 8em;
 }
 
 .emailFormContainer {
@@ -126,8 +127,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 4em;
-  border-right: 1px solid var(--light-orange);
 }
 
 .emailFormContainer h2 {
@@ -140,14 +139,36 @@
   gap: 1em;
 }
 
+#emailForm input {
+  height: 3em;
+  border-radius: 7px;
+  background-color: var(--white);
+  border: none;
+  padding: 0 1em;
+}
+
+#emailForm a {
+  height: 3em;
+  text-decoration: none;
+  color: var(--white);
+  border: 1px solid var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#emailForm a:hover {
+  color: var(--green);
+  background-color: var(--white);
+}
+
 .footerContactContainer {
   width: max-content;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 4em;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .footerContactContainer p:not(:last-child) {
@@ -155,7 +176,7 @@
 }
 
 .footerContact {
-  border-bottom: 1px solid var(--light-orange);
+  border-bottom: 1px solid var(--orange);
 }
 
 .footerCopyright {

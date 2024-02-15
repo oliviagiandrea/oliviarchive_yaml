@@ -1,9 +1,23 @@
 :root {
-  --light-green: #606C38;
-  --dark-green: #283618;
-  --white: #FEFAE0;
-  --light-orange: #DDA15E;
-  --light-orange: #BC6C25;
+  --orange: #D46F42;
+  --green: #3E522D;
+  --brown: #7D573D;
+  --gray: #A39E9E;
+  --white: #F2EAD2;
+
+  /* Cozy and Inviting: */
+  /* --beige: #F5E6CC;
+  --brown: #9C715E;
+  --red: #B3504B;
+  --green: #5D704B;
+  --white: #F4F1DE; */
+
+  /* Organic and natural: */
+  /* --brown: #7F5A4B;
+  --green: #687C66;
+  --olive: #A19F75;
+  --gray: #8E8C88;
+  --white: #F4EEDF; */
 }
 
 @font-face {
@@ -33,6 +47,7 @@ h1 {
   font-family: 'Signika', sans-serif;
   font-weight: 700;
   font-size: 2.5em;
+  color: var(--green) !important; 
 }
 
 h2 {

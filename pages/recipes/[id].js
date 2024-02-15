@@ -3,12 +3,13 @@ import Image from 'next/image';
 import Date from '../../components/date';
 import Layout from '../../components/layout';
 import { getAllRecipeIds, getRecipeData } from '../../lib/recipes';
+import styles from '../../styles/recipe.module.css';
 
 export default function Recipe({ recipeData }) {
   return (
     <Layout>
       <Head>
-        <title>{recipeData.title}</title>
+        <title>{`${recipeData.title} - OLIVIARCHIVE`}</title>
       </Head>
       <section>
         <div className="container">
@@ -19,14 +20,14 @@ export default function Recipe({ recipeData }) {
           <p>{recipeData.servings} servings &#183; {recipeData.minutes} minutes</p>
 
           {/* <Image
-          priority
-          src={"/images/recipes/" + recipeData.id + ".png"}
-          height={320}
-          width={420}
-          alt={"Photo of " + recipeData.title}
-        /> */}
+            priority
+            src={"/images/recipes/" + recipeData.id + ".png"}
+            height={320}
+            width={420}
+            alt={"Photo of " + recipeData.title}
+          /> */}
 
-          <div style={{ display: 'flex', gap: '20px' }}>
+          <div className={`container ${styles.recipeContainer}`}>
             <div style={{ flex: '1' }}>
               {recipeData.ingredients && (
                 <>
