@@ -27,8 +27,8 @@ export default function Recipe({ recipeData }) {
             alt={"Photo of " + recipeData.title}
           /> */}
 
-          <div className={`container ${styles.recipeContainer}`}>
-            <div style={{ flex: '1' }}>
+          <div className={styles.recipeContainer}>
+            <div className={styles.ingredientsContainer}>
               {recipeData.ingredients && (
                 <>
                   <h2>Ingredients</h2>
@@ -36,7 +36,7 @@ export default function Recipe({ recipeData }) {
                 </>
               )}
             </div>
-            <div style={{ flex: '1' }}>
+            <div className={styles.directionsContainer}>
               {recipeData.directions && (
                 <>
                   <h2>Directions</h2>

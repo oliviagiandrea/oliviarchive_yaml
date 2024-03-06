@@ -50,7 +50,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  transition: left 0.3s ease, opacity 0.3s ease; 
+  transition: left 1s ease, opacity 1s ease; 
 }
 
 .showMenu {
@@ -118,7 +118,7 @@
   display: flex;
   flex-direction: row;
   text-align: left;
-  gap: 8em;
+  gap: 6em;
 }
 
 .emailFormContainer {
@@ -129,37 +129,54 @@
   justify-content: center;
 }
 
-.emailFormContainer h2 {
-  margin-block-start: 0;
-}
-
-#emailForm {
+.emailForm {
   display: flex;
   flex-direction: column;
-  gap: 1em;
 }
 
-#emailForm input {
+.emailForm h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 1rem;
+}
+
+.emailForm label {
+  margin-bottom: 1rem;
+}
+
+.emailForm input[type="email"] {
   height: 3em;
   border-radius: 7px;
   background-color: var(--white);
   border: none;
   padding: 0 1em;
+  margin-bottom: 1rem;
 }
 
-#emailForm a {
+.emailForm input[type="submit"] {
   height: 3em;
-  text-decoration: none;
   color: var(--white);
   border: 1px solid var(--white);
+  background-color: var(--green);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 7px;
 }
 
-#emailForm a:hover {
+.emailForm input[type="submit"]:hover {
   color: var(--green);
   background-color: var(--white);
+  cursor: pointer;
+}
+
+#mce-responses {
+  display: none;
+}
+
+#emailFormHidden {
+  position: absolute; 
+  left: -5000px;
 }
 
 .footerContactContainer {

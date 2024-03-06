@@ -1,0 +1,21 @@
+.recipeContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: calc(100% - 5vw);
+  margin: 4em auto;
+  text-align: left;
+  gap: 5%;
+}
+
+.ingredientsContainer {
+  width: 30%;
+}
+
+.directionsContainer {
+  width: 60%;
+}
+
+.recipeContainer li {
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+}

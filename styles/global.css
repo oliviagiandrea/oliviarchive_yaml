@@ -30,6 +30,11 @@
   src: url('../Fonts/cour.ttf')  format('truetype')
 }
 
+@font-face {
+  font-family: 'Edu TAS Beginner';
+  src: url('../Fonts/EduTASBeginner-VariableFont_wght.ttf')  format('truetype')
+}
+
 html,
 body {
   padding: 0;
